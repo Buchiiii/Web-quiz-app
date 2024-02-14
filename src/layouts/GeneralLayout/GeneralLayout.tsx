@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div
         className=" ps-3 pe-3 pt-2 sm:ps-3 sm:pe-3"
         style={{
-          overflowX: "hidden",
+          overflow: "auto",
           height: "100vh",
           backgroundColor: isDark ? "#3B4D66" : "#FFFFFF",
           backgroundImage: !isDark
