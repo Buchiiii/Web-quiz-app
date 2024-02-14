@@ -51,7 +51,7 @@ const Questions = ({ name }: IQuestionsProps) => {
         <div className=" sm:w-[90%] md:w-[70%] flex pb-4">
           <div
             style={{ display: "flex" }}
-            className=" md:h-[452px]  flex flex-col "
+            className=" w-[100%] md:h-[452px]  flex flex-col "
           >
             <div className="mb-[27px] ">
               <label
@@ -77,8 +77,8 @@ const Questions = ({ name }: IQuestionsProps) => {
               style={{ flex: 1 }}
               className="justify-end  h-[40px] mt-2 flex items-end"
             >
-              <div className="h-[17px] w-[100%] p-1 rounded-lg border  shadow">
-                <div className="h-2 relative w-200 ">
+              <div style={{backgroundColor: isDark? "#3B4D66 ": "#FFFFFF"}} className="h-[17px] w-[100%]  p-1 rounded-lg  shadow">
+                <div  className="h-2  relative w-200 ">
                   <span
                     className="absolute  "
                     style={{
