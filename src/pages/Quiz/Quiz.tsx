@@ -6,9 +6,7 @@ const Quiz = () => {
   return (
     <>
       <div className="flex justify-center ">
-        <div className=" w-[1160px]  ">
-          <Questions name={name.name as string} />
-        </div>
+        <Questions name={name.name as string} />
       </div>
     </>
   );
