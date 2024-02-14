@@ -13,12 +13,11 @@ const Subjects = () => {
         {subjects.map((element, index) => (
           <Link
             key={index}
-            className="flex mb-[20px] border shadow rounded-lg h-[96px]  "
+            className="flex mb-[20px]  shadow h-[96px]  "
             to={`/quiz/${element}`}
             style={{
               borderRadius: "20px",
-              borderColor: isDark ? "#3B4D66" : "#FFFFFF",
-              boxShadow: isDark ? "0px 0px 0.7px white" : "",
+              backgroundColor: isDark ? "#3B4D66" : "#FFFFFF",
             }}
           >
             <div className="flex ">

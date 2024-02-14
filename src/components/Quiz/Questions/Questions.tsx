@@ -103,10 +103,11 @@ const Questions = ({ name }: IQuestionsProps) => {
                 onClick={() => {
                   setChoice(element);
                 }}
-                className="flex items-center mb-[20px] border shadow rounded-lg h-[96px]  "
+                className="flex items-center mb-[20px] shadow h-[96px]  "
                 style={{
                   borderRadius: "20px",
                   borderWidth: element === choice ? "3px" : "",
+                  backgroundColor: isDark ? "#3B4D66" : "#FFFFFF",
                   borderColor:
                     choice === element
                       ? isSubmitted
@@ -118,7 +119,6 @@ const Questions = ({ name }: IQuestionsProps) => {
                       ? "#3B4D66"
                       : "white",
 
-                  boxShadow: isDark ? "0px 0px 0.7px white" : "",
                   marginBottom: index === 3 ? 0 : "",
                 }}
               >
