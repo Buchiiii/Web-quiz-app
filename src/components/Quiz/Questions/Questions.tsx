@@ -48,7 +48,7 @@ const Questions = ({ name }: IQuestionsProps) => {
   return (
     <>
       <div className="w-[1160px] grid md:grid-cols-2 sm:grid-cols-1">
-        <div className="  flex pb-4">
+        <div className=" sm:w-[90%] md:w-[70%] flex pb-4">
           <div
             style={{ display: "flex" }}
             className=" md:h-[452px]  flex flex-col "
