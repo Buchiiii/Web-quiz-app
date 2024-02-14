@@ -153,9 +153,10 @@ const Questions = ({ name }: IQuestionsProps) => {
                   </div>
                   <div
                     style={{ flex: 1 }}
-                    className="flex   self-center ms-[32px]"
+                    className="flex  pe-4  self-center ms-[32px]"
                   >
                     <label
+                      className=""
                       style={{
                         cursor: "pointer",
                         textAlign: "start",
