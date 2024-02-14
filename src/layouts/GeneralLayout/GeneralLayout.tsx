@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import Header from "../../components/common/Header/Header";
 import { RootState } from "../../redux/store";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -23,7 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
         }}
       >
         <Header name={name.name} />
-        <div >{children}</div>
+        <div>{children}</div>
       </div>
     </>
   );
