@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Subjects = () => {
   const { isDark } = useSelector((state: RootState) => state.theme);
-  const subjects = ["HTML", "CSS", "Javascript", "Accessibility"];
+  const subjects = ["HTML", "CSS", "JavaScript", "Accessibility"];
 
   return (
     <>
@@ -15,7 +15,11 @@ const Subjects = () => {
             key={index}
             className="flex mb-[20px] border shadow rounded-lg h-[96px]  "
             to={`/quiz/${element}`}
-            style={{ borderRadius: "20px", borderColor: isDark? "#3B4D66" : "#FFFFFF", boxShadow:isDark ?"0px 0px 0.7px white" : "" }}
+            style={{
+              borderRadius: "20px",
+              borderColor: isDark ? "#3B4D66" : "#FFFFFF",
+              boxShadow: isDark ? "0px 0px 0.7px white" : "",
+            }}
           >
             <div className="flex ">
               <div
@@ -26,7 +30,7 @@ const Subjects = () => {
                       ? "#FFF1E9"
                       : element === "CSS"
                       ? "#E0FDEF"
-                      : element === "Javascript"
+                      : element === "JavaScript"
                       ? "#EBF0FF"
                       : "#F6E7FF",
                 }}

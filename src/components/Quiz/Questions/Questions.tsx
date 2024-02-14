@@ -1,7 +1,7 @@
 import { useState } from "react";
 import jsonData from "../../../data.json";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { RootState } from "../../../redux/store";
 import { COLORS } from "../../../constants/Theme";
 import { ReactComponent as Check } from "../../../assets/images/icon-correct.svg";
@@ -208,9 +208,8 @@ const Questions = ({ name }: IQuestionsProps) => {
                   }}
                   className=" mt-[20px] justify-center items-center flex rounded-lg h-[96px]"
                   onClick={() => {
-                  
-                      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                    
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
                     setChoice("");
                     setIsSubmitted(false);
 

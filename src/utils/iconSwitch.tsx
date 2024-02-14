@@ -14,7 +14,7 @@ export const iconSwitch = (text: string) => {
     case "Accessibility":
       return <Accessibility />;
 
-    case "Javascript":
+    case "JavaScript":
       return <Javascript />;
 
     default:

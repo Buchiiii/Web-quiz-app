@@ -42,7 +42,7 @@ const Header = ({ name }: IHeaderProps) => {
                         ? "#FFF1E9"
                         : name === "CSS"
                         ? "#E0FDEF"
-                        : name === "Javascript"
+                        : name === "JavaScript"
                         ? "#EBF0FF"
                         : "#F6E7FF",
                   }}
