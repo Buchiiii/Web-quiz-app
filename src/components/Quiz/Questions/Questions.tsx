@@ -19,10 +19,11 @@ const Questions = ({ name }: IQuestionsProps) => {
   const [choice, setChoice] = useState("");
   const [error, setError] = useState(false);
   const optionsLetter = ["A", "B", "C", "D"];
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(10);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(0);
   const { isDark } = useSelector((state: RootState) => state.theme);
+  const [count, setCount] = useState(1);
 
   const data = jsonData.quizzes.filter((element) => {
     return element.title === name;
@@ -32,7 +33,8 @@ const Questions = ({ name }: IQuestionsProps) => {
   questions.forEach((element) => answers.push(element.answer));
 
   const calculateProgress = () => {
-    setProgress(((questionIndex + 1) / questions.length) * 100);
+    setProgress(((count + 1) / questions.length) * 100);
+    setCount((previous) => previous + 1);
   };
 
   const incrementQuestionIndex = () => {
@@ -77,8 +79,11 @@ const Questions = ({ name }: IQuestionsProps) => {
               style={{ flex: 1 }}
               className="justify-end  h-[40px] mt-2 flex items-end"
             >
-              <div style={{backgroundColor: isDark? "#3B4D66 ": "#FFFFFF"}} className="h-[17px] w-[100%]  p-1 rounded-lg  shadow">
-                <div  className="h-2  relative w-200 ">
+              <div
+                style={{ backgroundColor: isDark ? "#3B4D66 " : "#FFFFFF" }}
+                className="h-[17px] w-[100%]  p-1 rounded-lg  shadow"
+              >
+                <div className="h-2  relative w-200 ">
                   <span
                     className="absolute  "
                     style={{
